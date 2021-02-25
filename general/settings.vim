@@ -55,3 +55,19 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+hi Comment cterm=italic
+let g:nvcode_termcolors=256
+
+syntax on
+" colorscheme nord
+colorscheme gruvbox
+" colorscheme TSnazzy
+" colorscheme aurora
+"colorscheme deus
+
+" checks if your terminal has 24-bit color support
+if (has("termguicolors"))
+  set termguicolors
+  hi LineNr ctermbg=NONE guibg=NONE
+endif

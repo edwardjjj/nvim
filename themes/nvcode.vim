@@ -3,7 +3,7 @@ let g:nvcode_termcolors=256
 
 syntax on
 " colorscheme nord
-colorscheme nvcode
+colorscheme gruvbox
 " colorscheme onedark
 " colorscheme TSnazzy
 " colorscheme aurora
@@ -11,6 +11,6 @@ colorscheme nvcode
 
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))
-    set termguicolors
-    hi LineNr ctermbg=NONE guibg=NONE
+  set termguicolors
+  hi LineNr ctermbg=NONE guibg=NONE
 endif
