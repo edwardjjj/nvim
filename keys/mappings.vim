@@ -1,5 +1,4 @@
 " Basic Key Mappings
-
 imap <C-h> <C-w>h
 imap <C-j> <C-w>j
 imap <C-k> <C-w>k
@@ -13,13 +12,13 @@ nnoremap <Space> <Nop>
 vnoremap < <gv
 vnoremap > >gv
 
-if exists('g:vscode')
+" if exists('g:vscode')
 
-  " Simulate same TAB behavior in VSCode
-  nmap <Tab> :Tabnext<CR>
-  nmap <S-Tab> :Tabprev<CR>
+"   " Simulate same TAB behavior in VSCode
+"   nmap <Tab> :Tabnext<CR>
+"   nmap <S-Tab> :Tabprev<CR>
 
-else
+" else
 
   " Better nav for omnicomplete
   inoremap <expr> <c-j> ("\<C-n>")
@@ -90,8 +89,14 @@ else
       nnoremap <C-Right> :vertical resize +2<CR>
   endif
 
-endif
+"endif
 
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                              UltuSnips keymap                              "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger="<C-space>"
+
